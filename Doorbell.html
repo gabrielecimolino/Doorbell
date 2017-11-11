@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html>
+  <body>
+  <center>
+  <pre>
+      _______                                 __                  __  __ 
+      |       \                               |  \                |  \|  \
+      | $$$$$$$\  ______    ______    ______  | $$____    ______  | $$| $$
+      | $$  | $$ /      \  /      \  /      \ | $$    \  /      \ | $$| $$
+      | $$  | $$|  $$$$$$\|  $$$$$$\|  $$$$$$\| $$$$$$$\|  $$$$$$\| $$| $$
+      | $$  | $$| $$  | $$| $$  | $$| $$   \$$| $$  | $$| $$    $$| $$| $$
+      | $$__/ $$| $$__/ $$| $$__/ $$| $$      | $$__/ $$| $$$$$$$$| $$| $$
+      | $$    $$ \$$    $$ \$$    $$| $$      | $$    $$ \$$     \| $$| $$
+       \$$$$$$$   \$$$$$$   \$$$$$$  \$$       \$$$$$$$   \$$$$$$$ \$$ \$$
+                                                                                                                                                                      
+  </pre>
+  <pre>
+      ▄▄▄▄▄▄▄▄ . ▄▄▄· • ▌ ▄ ·.     ▄▄▄▄▄▄▄▌ ▐ ▄▌      
+      •██  ▀▄.▀·▐█ ▀█ ·██ ▐███▪    •██  ██· █▌▐█▪     
+       ▐█.▪▐▀▀▪▄▄█▀▀█ ▐█ ▌▐▌▐█·     ▐█.▪██▪▐█▐▐▌ ▄█▀▄ 
+       ▐█▌·▐█▄▄▌▐█ ▪▐▌██ ██▌▐█▌     ▐█▌·▐█▌██▐█▌▐█▌.▐▌
+       ▀▀▀  ▀▀▀  ▀  ▀ ▀▀  █▪▀▀▀     ▀▀▀  ▀▀▀▀ ▀▪ ▀█▄▀▪
+  </pre>
+  <form action="https://api.particle.io/v1/devices/1f0029000247353138383138/play?access_token=82b7d9e8bc4a81358000bcc4c84a792b7d21299a" method="POST">
+    <input type="radio" name="arg" value="">Play melody
+    <input type="submit" value="Play!">
+  </form>
+  <form action="https://api.particle.io/v1/devices/1f0029000247353138383138/bpm?access_token=82b7d9e8bc4a81358000bcc4c84a792b7d21299a" method="POST">
+    <input type="text" name="arg">Set BPM
+    <input type="submit" value="BPM!">
+  </form>
+  <form action="https://api.particle.io/v1/devices/1f0029000247353138383138/set?access_token=82b7d9e8bc4a81358000bcc4c84a792b7d21299a" method="POST">
+    Set the melody<br>
+    <input type="radio" name="arg" value="rld3">Default[rld3]    
+    <br>
+    <input type="radio" name="arg" value="E-4eD-4eG-4eR-0eG-4qA-4eR-0eA-4qB-4eR-0eG-4qD-4eR-0e">Dango
+    <br>
+    <input type="radio" name="arg" value="A#4qF-4qR-0eA#4eA#4sC-5sD-5sD#5sF-5hR-0eF-5sF-5eF#5sG#5sA#5h">Zelda
+    <br> 
+    <input type="radio" name="arg" value="D-4qG-4qG-4eA-4eG-4eF#4eE-4qE-4hA-4qA-4eB-4eA-4eG-4eF#4qD-4q">We Wish You a Merry Christmas    
+    <br>
+    <input type="submit" value="Set!">
+  </form>
+  <form action="https://api.particle.io/v1/devices/1f0029000247353138383138/set?access_token=82b7d9e8bc4a81358000bcc4c84a792b7d21299a" method="POST">
+    Write a melody [MAX 63 CHARACTERS]<br>
+    <br>
+    <input type="text" name="arg"> 
+    <br>
+    <input type="submit" value="Write!">
+  </form>
+  <form action="https://api.particle.io/v1/devices/1f0029000247353138383138/alert?access_token=82b7d9e8bc4a81358000bcc4c84a792b7d21299a" method="POST">
+    <input type="radio" name="arg" value="on">Alert on
+    <br>
+    <input type="radio" name="arg" value="off">Alert off
+    <br>
+    <input type="submit" value="Set Alert!">
+  </form>
+  <form action="https://api.particle.io/v1/devices/1f0029000247353138383138/bell?access_token=82b7d9e8bc4a81358000bcc4c84a792b7d21299a" method="POST">
+    <input type="radio" name="arg" value="on">Bell on
+    <br>
+    <input type="radio" name="arg" value="off">Bell off
+    <br>
+    <input type="submit" value="Set Bell!">
+  </form>
+  <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="http://thingspeak.com/channels/362957/charts/1?dynamic=true"></iframe>
+  </center>
+  </body>
+</html>
