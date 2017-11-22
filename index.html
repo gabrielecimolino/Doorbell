@@ -42,7 +42,14 @@
     <input type="submit" value="Set!">
   </form>
   <form action="https://api.particle.io/v1/devices/1f0029000247353138383138/set?access_token=82b7d9e8bc4a81358000bcc4c84a792b7d21299a" method="POST">
-    Write a melody [MAX 63 CHARACTERS]<br>
+    Write a melody [MAX 63 CHARACTERS]
+    <br>
+    <br>
+    <pre>
+    Protip: A melody can be written as a string of text where each group of 4 characters corresponds to the note, intonation, octave, and duration of the note to be played.
+    Example)  The C major scale
+              C-4qD-4qE-4qF-4qG-4qA-4qB-4qC-5qB-4qA-4qG-4qF-4qE-4qD-4qC-4q
+    </pre>
     <br>
     <input type="text" name="arg"> 
     <br>
